@@ -5,17 +5,23 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 .sidebar {
   position: fixed;
   display: block;
   height: 100%;
   width: 100px;
   background: rgba(0, 0, 0, 0.9);
-  border-right: 1px solid #fff;
   transition: all 0.5s ease;
 }
 .sidebar.active {
   width: 60px;
+}
+
+.sidebar .logo-style {
+  border-radius: 50%;
+  color: #8e05c2;
+  font-weight: bolder;
 }
 .sidebar .logo-details {
   height: 80px;
@@ -77,10 +83,10 @@
 }
 .home-container {
   position: relative;
-  background: #1e1f27;
+  background: rgba(0, 0, 0, 0.9);
   min-height: 100vh;
-  width: calc(100% - 240px);
-  left: 240px;
+  width: calc(100% - 100px);
+  left: 100px;
   transition: all 0.5s ease;
 }
 .sidebar.active ~ .home-container {
@@ -90,23 +96,35 @@
 .home-container nav {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: start;
   height: fit-content;
-  background: #2d3035;
-  border-bottom: 1px solid #fff;
   display: flex;
   align-items: center;
   position: fixed;
-  width: calc(100% - 240px);
-  left: 240px;
+  width: calc(100% - 100px);
+  left: 100px;
   z-index: 100;
   padding: 0 20px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   transition: all 0.5s ease;
 }
 .sidebar.active ~ .home-container nav {
   left: 60px;
   width: calc(100% - 60px);
+}
+.home-container nav .nav-options {
+  display: flex;
+  flex-wrap: wrap;
+  color: #fff;
+  list-style-type: none;
+  align-items: left;
+}
+.home-container nav .nav-options li {
+  padding: 0 30px;
+}
+.home-container .search-and-profile{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 .home-container nav .sidebar-button {
   display: flex;
@@ -120,77 +138,79 @@ nav .sidebar-button i {
 }
 .home-container nav .search-box {
   position: relative;
+  justify-content: flex-end;
   margin-top: 20px;
   height: 50px;
-  max-width: 550px;
+  max-width: 250px;
   width: 100%;
   margin: 20px 20px;
 }
 
 .nav-btn button {
-    background: none;
-    color: #bdbcbf;
-    padding: 5px 12px;
-    border-radius: 20px;
-    border: 1px solid #bdbcbf;
-    margin: 0 5px;
-    cursor: pointer;
-  }
-  nav .search-box input {
-    height: 100%;
-    width: 100%;
-    outline: none;
-    background: #808181;
-    border: 2px solid #808181;
-    color: #fff;
-    border-radius: 30px;
-    font-size: 18px;
-    padding: 0 15px;
-  }
-  nav .search-box .bx-search {
-    position: absolute;
-    height: 40px;
-    width: 40px;
-    right: 5px;
-    border-radius: 4px;
-    line-height: 40px;
-    text-align: center;
-    color: #fff;
-    font-size: 22px;
-    align-items: flex-start;
-    transition: all 0.4 ease;
-    cursor: pointer;
-  }
-  .home-container nav .profile-details {
-    display: flex;
-    align-items: center;
-    background: none;
-    color: #fff;
-    border-radius: 6px;
-    height: 50px;
-    min-width: 190px;
-    /* padding: 0 15px 0 2px; */
-  }
-  nav .profile-details img {
-    height: 40px;
-    width: 40px;
-    margin-left: 20px;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-  nav .profile-details .admin_name {
-    font-size: 15px;
-    font-weight: 500;
-    color: #fff;
-    margin: 0 10px;
-    /* white-space: nowrap; */
-  }
-  nav .profile-details i {
-    font-size: 25px;
-    color: #333;
-  }
+  background: none;
+  color: #bdbcbf;
+  padding: 5px 12px;
+  border-radius: 20px;
+  border: 1px solid #bdbcbf;
+  margin: 0 5px;
+  cursor: pointer;
+}
+nav .search-box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  background: rgba(0, 0, 0, 0.8);
+  border: none;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 18px;
+  padding: 0 15px;
+}
+nav .search-box .bx-search {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  right: 5px;
+  border-radius: 4px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  align-items: flex-start;
+  transition: all 0.4 ease;
+  cursor: pointer;
+}
+.home-container nav .profile-details {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background: none;
+  color: #fff;
+  border-radius: 6px;
+  height: 50px;
+  min-width: 190px;
+  /* padding: 0 15px 0 2px; */
+}
+nav .profile-details img {
+  height: 40px;
+  width: 40px;
+  margin-left: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+nav .profile-details .admin_name {
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  margin: 0 10px;
+  /* white-space: nowrap; */
+}
+nav .profile-details i {
+  font-size: 25px;
+  color: #333;
+}
 
 .material-symbols-outlined {
-    color: #fff;
-    padding: 5pc 10px;
+  color: #fff;
+  padding: 5pc 10px;
 }
