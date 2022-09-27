@@ -96,7 +96,7 @@
 .home-container nav {
   display: flex;
   flex-wrap: wrap;
-  justify-content: start;
+  justify-content: space-between;
   height: fit-content;
   display: flex;
   align-items: center;
@@ -121,10 +121,22 @@
 .home-container nav .nav-options li {
   padding: 0 30px;
 }
-.home-container .search-and-profile{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+.home-container nav .nav-options li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.824);
+}
+.home-container nav .nav-options li a.active {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  align-items: center;
+}
+
+.home-container .search-and-profile {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 .home-container nav .sidebar-button {
   display: flex;
@@ -179,6 +191,7 @@ nav .search-box .bx-search {
   align-items: flex-start;
   transition: all 0.4 ease;
   cursor: pointer;
+  background: rgba(0, 0, 0, 0.8);
 }
 .home-container nav .profile-details {
   display: flex;
@@ -190,6 +203,10 @@ nav .search-box .bx-search {
   height: 50px;
   min-width: 190px;
   /* padding: 0 15px 0 2px; */
+}
+.home-container nav .profile-details span,
+img {
+  cursor: pointer;
 }
 nav .profile-details img {
   height: 40px;
@@ -210,7 +227,62 @@ nav .profile-details i {
   color: #333;
 }
 
+.home-container .video-section {
+  position: relative;
+  padding: 140px 40px 40px 40px;
+  row-gap: 20px;
+  column-gap: 0px;
+  flex-basis: 0;
+  display: flex;
+  min-width: 400px;
+  height: fit-content;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.home-container .video-section .boxes {
+  height: 135px;
+  width: 240px;
+  border-radius: 8px;
+  background-color: #fff;
+  /* padding: 40px; */
+  display: flex;
+}
+.thumbnail,
+.thumbnail-link {
+    border-radius: 8px;
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+}
 .material-symbols-outlined {
   color: #fff;
-  padding: 5pc 10px;
+  padding: 5px 10px;
+}
+
+.playback-container {
+    display: flex;
+  position: relative;
+  padding: 90px 40px 40px 40px;
+  min-width: 400px;
+  height: fit-content;
+}
+
+.video-box{
+    min-height: 400px;
+    width: 700px;
+    margin: 50px 40px;
+    border-radius: 8px;
+    /* border: 1px solid white; */
+}
+
+.video-box iframe {
+    border-radius: 8px;
+    min-width: 100%;
+    min-height: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.recommended-sidebar .boxes {
+
 }
