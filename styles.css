@@ -241,16 +241,15 @@ nav .profile-details i {
 }
 
 .home-container .video-section .boxes {
-  height: 135px;
-  width: 240px;
+  height: 165px;
+  width: 300px;
   border-radius: 8px;
   background-color: #fff;
-  /* padding: 40px; */
   display: flex;
 }
 .thumbnail,
 .thumbnail-link {
-    border-radius: 8px;
+  border-radius: 8px;
   max-height: 100%;
   min-width: 100%;
   object-fit: cover;
@@ -261,28 +260,64 @@ nav .profile-details i {
 }
 
 .playback-container {
-    display: flex;
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
-  padding: 90px 40px 40px 40px;
+  padding: 90px 0 0 0;
   min-width: 400px;
   height: fit-content;
 }
 
-.video-box{
-    min-height: 400px;
-    width: 700px;
-    margin: 50px 40px;
-    border-radius: 8px;
-    /* border: 1px solid white; */
+.video-box {
+  min-height: 511px;
+  width: 70%;
+  flex-wrap: wrap;
+  margin: 50px 40px 50px 0;
+  border-radius: 8px;
+  /* border: 1px solid white; */
 }
 
 .video-box iframe {
-    border-radius: 8px;
-    min-width: 100%;
-    min-height: 400px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  min-width: 1022px;
+  min-height: 511px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.recommended-sidebar {
+    /* width:; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+    width: calc(30% - 40px);
+  padding: 0;
+  margin: 50px 0;
 }
 
 .recommended-sidebar .boxes {
+  width: 240px;
+  height: 135px;
+}
 
+.video-title {
+    color: #fff;
+    font-size: 1.5rem;
+}
+.like-btn {
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 1600px){
+   .video-box {
+    margin: 100px ;
+    width: 60%;
+   }
+
+   .recommended-sidebar {
+    width: 40%;
+    display: flex;
+    
+   }
 }
