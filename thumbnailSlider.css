@@ -307,6 +307,7 @@ nav .profile-details .admin_name {
 }
 .continue-podcast-layout span{
   position: relative;
+  max-width: 180px;
   z-index: 99;
   left: 50%;
 }
