@@ -28,9 +28,10 @@ function onThumbnailClick() {
           ></iframe>
           <div class="title-row"></div>
           <span class="video-title">Apple Watch Ultra Unboxing</span>
-          <span class="like-btn"><span class="material-symbols-outlined">
-            thumb_up
-            </span></span> 
+              <div class="heart-icons">
+                  <img class="heart-like" src="./assets/icons/heart.png" />
+                  <img class="brokenHeart-like" src="./assets/icons/broken-heart.png" />
+              </div>
         </div>
 
         <div class="recommended-sidebar">

@@ -4,16 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
     <link rel="stylesheet" href="thumbnailSlider.css" />
     <link
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>UniStream</title>
   </head>
   <body>
@@ -47,81 +44,145 @@
       </ul>
     </div>
     <section class="home-container">
-      <nav>
-        <div class="nav-options">
-          <li><a href="./index.html">Discover</a></li>
-          <li><a href="./trending.html">Trending</a></li>
-          <li><a href="#" class="active">Live</a></li>
-        </div>
+      <div class="home-section">
+        <div class="left-side">
+          <!-- <nav>
+            <div class="nav-options">
+              <li><a href="./index.html">Discover</a></li>
+              <li><a href="./trending.html">Trending</a></li>
+              <li><a href="#" class="active">Live</a></li>
+            </div>
 
-        <div class="search-and-profile">
-          <div class="search-box">
-            <i class="bx bx-search"></i>
-            <input type="text" placeholder="Search..." />
-          </div>
-          <div class="profile-details">
-            <span class="material-symbols-outlined"> notifications </span>
-            <span class="material-symbols-outlined"> videocam </span>
-            <img class="people-dp" src="./assets/images/face_memoji.jpg" />
-            <!-- <span class="admin_name">Hi, Shravan Suresh</span> -->
-          </div>
-        </div>
-      </nav>
-      <div class="slider-container">
-        <!-- <div class="thumbnail-slider"> -->
-          <!-- <input class="thumbnail-slider-target" type="radio" id="slide-1" name="slider"/>
-          <input class="thumbnail-slider-target" type="radio" id="slide-2" name="slider"/>
-          <input class="thumbnail-slider-target" type="radio" id="slide-3" name="slider" checked="checked"/>
-          <input class="thumbnail-slider-target" type="radio" id="slide-4" name="slider"/>
-          <input class="thumbnail-slider-target" type="radio" id="slide-5" name="slider"/>
-          <div class="thumbnail-slider__viewport">
-            <div class="thumbnail-slider__viewbox">
-              <div class="thumbnail-slider__container">
-                <div class="thumbnail-slider-item">
-                  <div class="thumbnail-slider-item__inner">
-                    <figure class="thumbnail-slider-item-figure"><img class="thumbnail-slider-item-figure__image" src="./assets/images/2.webp" alt="The 5th Exotic"/>
-                      <figcaption class="thumbnail-slider-item-figure__caption"><a href="./playback.html">NYC is the Best City</a><span>Casey Neistat</span></figcaption>
-                    </figure>
-                    <label class="thumbnail-slider-item__trigger" for="slide-1" title="Show thumbnail 1"></label>
-                  </div>
-                </div>
-                <div class="thumbnail-slider-item">
-                  <div class="thumbnail-slider-item__inner">
-                    <figure class="thumbnail-slider-item-figure"><img class="thumbnail-slider-item-figure__image" src="./assets/images/3.webp" alt="The 5th Exotic"/>
-                      <figcaption class="thumbnail-slider-item-figure__caption"><a href="https://f4.bcbits.com/img/a3905613628_16.jpg">Sidemen Charity Football</a><span>Sidemen</span></figcaption>
-                    </figure>
-                    <label class="thumbnail-slider-item__trigger" for="slide-2" title="Show thumbnail 2"></label>
-                  </div>
-                </div>
-                <div class="thumbnail-slider-item">
-                  <div class="thumbnail-slider-item__inner">
-                    <figure class="thumbnail-slider-item-figure"><img class="thumbnail-slider-item-figure__image" src="./assets/images/4.webp" alt="The 5th Exotic"/>
-                      <figcaption class="thumbnail-slider-item-figure__caption"><a href="https://f4.bcbits.com/img/a3905613628_16.jpg">I moved back to the US</a><span>Teeqo</span></figcaption>
-                    </figure>
-                    <label class="thumbnail-slider-item__trigger" for="slide-3" title="Show thumbnail 3"></label>
-                  </div>
-                </div>
-                <div class="thumbnail-slider-item">
-                  <div class="thumbnail-slider-item__inner">
-                    <figure class="thumbnail-slider-item-figure"><img class="thumbnail-slider-item-figure__image" src="./assets/images/5.webp" alt="The 5th Exotic"/>
-                      <figcaption class="thumbnail-slider-item-figure__caption"><a href="https://f4.bcbits.com/img/a3905613628_16.jpg">Collect these</a><span>Watch guy</span></figcaption>
-                    </figure>
-                    <label class="thumbnail-slider-item__trigger" for="slide-4" title="Show thumbnail 4"></label>
-                  </div>
-                </div>
-                <div class="thumbnail-slider-item">
-                  <div class="thumbnail-slider-item__inner">
-                    <figure class="thumbnail-slider-item-figure"><img class="thumbnail-slider-item-figure__image" src="./assets/images/10.webp"/>
-                      <figcaption class="thumbnail-slider-item-figure__caption">Central Cee UK slang Freestyle<span>LA LEAKERS</span></figcaption>
-                    </figure>
-                    <label class="thumbnail-slider-item__trigger" for="slide-5" title="Show thumbnail 5"></label>
-                  </div>
-                </div>
+            <div class="search-and-profile">
+              <div class="search-box">
+                <i class="bx bx-search"></i>
+                <input type="text" placeholder="Search..." />
+              </div>
+              <div class="profile-details">
+                <span class="material-symbols-outlined"> notifications </span>
+                <span class="material-symbols-outlined"> videocam </span>
+                <img class="people-dp" src="./assets/images/face_memoji.jpg" />
+              </div>
+            </div>
+          </nav> -->
+          <div class="top-artists">
+            <p class="top-artists-heading">Popular Artists</p>
+            <div class="top-artists-row">
+              <div class="top-artists-name-dp">
+                <img
+                  class="top-artists-dp"
+                  src="./assets/images/face_memoji.jpg"
+                />
+                <p class="top-artists-name">Drake</p>
+              </div>
+              <div class="top-artists-name-dp">
+                <img
+                  class="top-artists-dp"
+                  src="./assets/images/dp/casey_dp.jpeg"
+                />
+                <p class="top-artists-name">Drake</p>
+              </div>
+              <div class="top-artists-name-dp">
+                <img
+                  class="top-artists-dp"
+                  src="./assets/images/face_memoji.jpg"
+                />
+                <p class="top-artists-name">Drake</p>
+              </div>
+              <div class="top-artists-name-dp">
+                <img
+                  class="top-artists-dp"
+                  src="./assets/images/face_memoji.jpg"
+                />
+                <p class="top-artists-name">Drake</p>
+              </div>
+              <div class="top-artists-name-dp">
+                <img
+                  class="top-artists-dp"
+                  src="./assets/images/face_memoji.jpg"
+                />
+                <p class="top-artists-name">Drake</p>
+              </div>
+              <div class="top-artists-name-dp">
+                <img
+                  class="top-artists-dp"
+                  src="./assets/images/face_memoji.jpg"
+                />
+                <p class="top-artists-name">Drake</p>
+              </div>
+              <div class="top-artists-name-dp">
+                <img
+                  class="top-artists-dp"
+                  src="./assets/images/face_memoji.jpg"
+                />
+                <p class="top-artists-name">Drake</p>
+              </div>
+              <div class="top-artists-name-dp">
+                <img
+                  class="top-artists-dp"
+                  src="./assets/images/face_memoji.jpg"
+                />
+                <p class="top-artists-name">Drake</p>
               </div>
             </div>
           </div>
+          <div class="trendy-songs">
+            <p class="trendy-songs-heading">Trendy Songs</p>
+            <div class="trendy-songs-row">
+              <div class="trendy-songs-posters-title">
+                <img
+                  class="trendy-songs-album-cover"
+                  src="./assets/images/album/starboy.jpeg"
+                />
+                <p class="trendy-songs-album-artist">The Weeknd</p>
+                <p class="trendy-songs-album-name">Starboy</p>
+              </div>
+              <div class="trendy-songs-posters-title">
+                <img
+                  class="trendy-songs-album-cover"
+                  src="./assets/images/album/honestlyNevermind.webp"
+                />
+                <p class="trendy-songs-album-artist">Drake</p>
+                <p class="trendy-songs-album-name">Honestly Nevermind</p>
+              </div>
+              <div class="trendy-songs-posters-title">
+                <img
+                  class="trendy-songs-album-cover"
+                  src="./assets/images/album/starboy.jpeg"
+                />
+                <p class="trendy-songs-album-artist">The Weeknd</p>
+                <p class="trendy-songs-album-name">Starboy</p>
+              </div>
+              <div class="trendy-songs-posters-title">
+                <img
+                  class="trendy-songs-album-cover"
+                  src="./assets/images/album/starboy.jpeg"
+                />
+                <p class="trendy-songs-album-artist">The Weeknd</p>
+                <p class="trendy-songs-album-name">Starboy</p>
+              </div>
+            </div>
+          </div>
+          <div class="podcasts">
+            <p class="podcasts-heading">Podcast</p>
+            <div class="podcasts-row">
+              <div class="continue-podcast">
+                <div class="continue-podcast-layout">
+                  <img
+                    class="podcast-cover"
+                    src="https://i.scdn.co/image/ab67656300005f1f36283ea556fa87305e60967e"
+                  > 
+                  <span class="material-symbols-outlined">play_circle
+                  </span>
+                </img>
+                </div>
+              </div>
+              <div class="previous-podcast"></div>
+            </div>
+          </div>
         </div>
-      </div> -->
+        <div class="right-side"></div>
+      </div>
     </section>
   </body>
 </html>
