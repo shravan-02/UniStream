@@ -232,7 +232,7 @@ nav .profile-details .admin_name {
 .home-container .home-section {
   position: relative;
   row-gap: 20px;
-  top: 90px;
+  top: 30px;
   column-gap: 20px;
   flex-basis: 0;
   min-width: 400px;
@@ -305,11 +305,13 @@ nav .profile-details .admin_name {
   box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.318);
   border: 1px solid rgba(0, 0, 0, 0.236);
 }
+.continue-podcast-layout {
+  max-width: 180px;
+  z-index: 99;  
+}
 .continue-podcast-layout span{
   position: relative;
-  max-width: 180px;
-  z-index: 99;
-  left: 50%;
+  margin: auto;
 }
 
 
