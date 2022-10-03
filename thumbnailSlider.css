@@ -85,7 +85,7 @@
 .home-container {
   position: relative;
   background: #fff;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   min-width: 375px;
   width: calc(100% - 100px);
   left: 100px;
@@ -232,23 +232,36 @@ nav .profile-details .admin_name {
 .home-container .home-section {
   position: relative;
   row-gap: 20px;
-  top: 30px;
+  /* top: 30px; */
   column-gap: 20px;
   flex-basis: 0;
+  display: flex;
+  flex-wrap: wrap;
+  /* padding: 20px 0; */
   min-width: 400px;
   flex-wrap: wrap;
   border: 1px solid #000; /*delete this*/
-  display: flex;
 }
 .left-side {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  width: max(300px, 65%);
+  overflow: scroll;
   row-gap: 20px;
   padding: 0 30px;
   border: 1px solid red; /*delete this*/
 }
+.top-artists{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
 .top-artists-row{
   display: flex;
+  /* overflow: scroll; */
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
   column-gap: 30px;
   row-gap: 30px;
 }
@@ -286,18 +299,19 @@ nav .profile-details .admin_name {
   border: 1px solid rgba(0, 0, 0, 0.236);
 
 }
-.trendy-songs-album-name{
+.trendy-songs-album-name, .podcast-box-episode{
   font-size: 1rem;
   
 }
-.trendy-songs-album-artist{
+.trendy-songs-album-artist, .podcast-box-artist-title{
   font-size: 0.7rem;
   color: rgba(0, 0, 0, 0.836);
 }
 
 .podcasts-row{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .podcast-cover{
   max-width: 180px;
@@ -313,8 +327,39 @@ nav .profile-details .admin_name {
   position: relative;
   margin: auto;
 }
+.podcasts-played {
+  position: relative;
+}
 
+.podcasts-played-view{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+}
+
+.podcast-box{
+  border-radius: 8px;
+  border: 1px solid black;
+  height: 100px;
+  width: 400px;
+  align-items: center;
+  display: flex;
+}
+
+.podcast-box .top-artists-dp {
+  width: 50px;
+  height: 50px;
+}
+
+.podcast-box-artist-title{
+  
+}
+.podcast-box-episode {
+
+}
 
 .right-side {
   display: flex;
+  border: 1px solid green;
 }
