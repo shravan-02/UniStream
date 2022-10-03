@@ -6,7 +6,6 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
 .sidebar {
   position: fixed;
   display: block;
@@ -240,7 +239,7 @@ nav .profile-details .admin_name {
   /* padding: 20px 0; */
   min-width: 400px;
   flex-wrap: wrap;
-  border: 1px solid #000; /*delete this*/
+  /* border: 1px solid #000; delete this */
 }
 .left-side {
   display: flex;
@@ -250,7 +249,7 @@ nav .profile-details .admin_name {
   overflow: scroll;
   row-gap: 20px;
   padding: 0 30px;
-  border: 1px solid red; /*delete this*/
+  /* border: 1px solid red; delete this */
 }
 .top-artists{
   display: flex;
@@ -361,5 +360,5 @@ nav .profile-details .admin_name {
 
 .right-side {
   display: flex;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
